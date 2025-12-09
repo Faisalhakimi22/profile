@@ -1004,8 +1004,14 @@ a:hover { color: var(--color-primary); }
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
+        align-items: center;
         gap: 1.5rem;
         padding: 0 0.5rem;
+    }
+    
+    .hero-image {
+        display: flex;
+        justify-content: center;
     }
     
     .hero-text {
