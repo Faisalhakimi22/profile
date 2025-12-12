@@ -1156,3 +1156,169 @@ a:hover { color: var(--color-primary); }
     .section { padding: 2rem 0; }
     .page-main { padding-top: 0; }
 }
+
+
+/* Experience Highlight Cards */
+.experience-highlight {
+    display: grid;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.exp-card {
+    background: var(--color-bg-alt);
+    border-left: 4px solid var(--color-accent);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 4px 4px 0;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.exp-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateX(4px);
+}
+
+.exp-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.exp-card-title h3 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.exp-card-org {
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.exp-card-date {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.exp-card-location {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.75rem;
+}
+
+.exp-card-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exp-card-details li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+}
+
+.exp-card-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+
+.exp-card-details li:last-child {
+    margin-bottom: 0;
+}
+
+/* Education Highlight */
+.edu-highlight {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.edu-card {
+    background: var(--color-bg-alt);
+    border-left: 4px solid var(--color-primary);
+    padding: 1rem 1.25rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.edu-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.edu-card-header h3 {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.edu-card-date {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.edu-card-org {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin: 0;
+}
+
+.edu-card-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin: 0.5rem 0 0 0;
+    line-height: 1.5;
+}
+
+/* Responsive for experience cards */
+@media (max-width: 768px) {
+    .exp-card {
+        padding: 1rem 1.25rem;
+    }
+    
+    .exp-card-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .exp-card-title h3 {
+        font-size: 1rem;
+    }
+    
+    .exp-card-org {
+        font-size: 0.9rem;
+    }
+    
+    .exp-card-details li {
+        font-size: 0.85rem;
+    }
+    
+    .edu-card-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .edu-card-header h3 {
+        font-size: 1rem;
+    }
+}
