@@ -1322,3 +1322,81 @@ a:hover { color: var(--color-primary); }
         font-size: 1rem;
     }
 }
+
+
+/* Volunteering & Community */
+.volunteer-list {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.volunteer-item {
+    background: var(--color-bg-alt);
+    border-left: 4px solid #38a169;
+    padding: 1rem 1.25rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.volunteer-item h4 {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 0.25rem 0;
+}
+
+.volunteer-org {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin: 0 0 0.5rem 0;
+}
+
+.volunteer-item > p:last-child {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* Hero Image Info (under profile picture) */
+.hero-image-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hero-degree {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 0.25rem 0;
+}
+
+.hero-institution {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    margin: 0 0 0.5rem 0;
+}
+
+.hero-contact-info {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin: 0 0 0.15rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero-image-info {
+        margin-top: 0.75rem;
+    }
+    
+    .hero-degree {
+        font-size: 0.95rem;
+    }
+    
+    .hero-institution,
+    .hero-contact-info {
+        font-size: 0.8rem;
+    }
+}
