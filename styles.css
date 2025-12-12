@@ -8,7 +8,7 @@
     --color-secondary: #333333;
     --color-accent: #2c5282;
     --color-text: #1a1a1a;
-    --color-text-light: #4a5568;
+    --color-text-light: #1a1a1a;
     --color-bg: #ffffff;
     --color-bg-alt: #f8f9fa;
     --color-border: #e2e8f0;
@@ -1402,4 +1402,16 @@ a:hover { color: var(--color-primary); }
     .hero-contact-info {
         font-size: 0.8rem;
     }
+}
+
+
+/* Hero Tagline */
+.hero-tagline {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    text-align: center;
+    margin: 0.75rem 0 0.5rem 0;
+    letter-spacing: 0.02em;
 }
