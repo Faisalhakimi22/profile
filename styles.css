@@ -207,7 +207,7 @@ a:hover { color: var(--color-primary); }
 
 .hero-bio p {
     font-size: 0.9rem;
-    color: var(--color-text-light);
+    color: var(--color-primary);
     line-height: 1.55;
     margin-bottom: 0.5rem;
 }
