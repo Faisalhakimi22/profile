@@ -258,7 +258,7 @@ a:hover { color: var(--color-primary); }
 }
 
 .avatar-img {
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 8px;
     border: 3px solid var(--color-border);
