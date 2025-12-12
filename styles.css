@@ -1415,3 +1415,68 @@ a:hover { color: var(--color-primary); }
     margin: 0.75rem 0 0.5rem 0;
     letter-spacing: 0.02em;
 }
+
+
+/* Mobile Hero Layout */
+.mobile-hero-info {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.hero-links.desktop-only {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-hero-info {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .mobile-hero-info h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .mobile-hero-info .title {
+        font-size: 1rem;
+        color: var(--color-text-light);
+        margin-bottom: 0.75rem;
+    }
+    
+    .mobile-hero-info .hero-degree {
+        margin-top: 0.5rem;
+    }
+    
+    .mobile-hero-info .hero-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-image {
+        order: -1;
+    }
+    
+    .hero-text {
+        order: 1;
+    }
+    
+    .hero-bio {
+        margin-top: 1.5rem;
+    }
+}
