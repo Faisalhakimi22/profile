@@ -173,6 +173,9 @@ a:hover { color: var(--color-primary); }
 
 .hero-image {
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text h1 {
@@ -258,7 +261,7 @@ a:hover { color: var(--color-primary); }
 }
 
 .avatar-img {
-    width: 250px;
+    width: 280px;
     height: auto;
     border-radius: 8px;
     border: 3px solid var(--color-border);
